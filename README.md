@@ -19,7 +19,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 ### Links
 
 - Solution URL: [solution URL here](![](./images/desktop.png))
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL here](https://rustom0.github.io/project6/)
 
 ## My process
   Used main container as flex and use grid for other.
