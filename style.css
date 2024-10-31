@@ -1,0 +1,152 @@
+:root{
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+
+}
+@font-face {
+    font-family: Barlow, Semi, Condensed;
+    src: url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+}
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--Light-gray);
+    font-family: Barlow Semi;
+
+}
+main{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-auto-rows: auto auto;
+    grid-template-areas: 
+    "box1 box1 box2 box3"
+    "box5 box4 box4 box3";
+    grid-gap: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.box1{
+    grid-area: box1;
+    background-color: var(--Moderate-violet);
+    color: var(--White);
+    border-radius: 0.7rem;
+}
+.box1 p{
+    opacity: 70%;
+    font-size: 0.8rem;
+
+}
+.box2{
+    grid-area: box2;
+    background-color: var(--Very-dark-grayish-blue);
+    border-radius: 0.7rem;
+    color: var(--White);
+    width: 15rem;
+}
+.box2 p{
+    opacity: 70%;
+    font-size: 0.8rem;
+}
+.box3{
+    grid-area: box3;
+    background-color: var(--White);
+    width: 11rem;
+    border-radius: 0.7rem;
+}
+.box3 p{
+    font-size: 0.8rem;
+    opacity: 70%;
+}
+.box4{
+    grid-area: box4;
+    background-color: var(--Very-dark-blackish-blue);
+    color: white;
+    border-radius: 0.7rem;
+}
+.box4 P{
+    font-size: 0.8rem;
+    opacity: 70%;
+    margin-bottom: 0px;
+}
+.box4 picture {
+    border: 2px solid var(--Moderate-violet);
+}
+.box5{
+    grid-area: box5;
+    background-color: var(--White);
+    border-radius: 0.7rem;
+    width: 10.625rem;
+}
+.box5{
+    opacity: 70%;
+    font-size: 0.8rem;
+}
+.padding{
+    padding: 1.5rem;
+}
+img{
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--Light-grayish-blue);
+}
+.picture{
+    display: inline-block;
+
+}
+.name{
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+}
+.name h4{
+    margin: 5px 0px 3px 10px;
+}
+.name p{
+    opacity: 50%;
+    margin: 0px 0px 0px 10px;
+}
+.name-color{
+    color: black;;
+}
+.name-color p{
+    opacity: 50%;
+}
+
+@media only screen and (max-width: 799px){
+    main{
+        grid-template-columns: 100%;
+        grid-auto-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box5"
+        "box4"
+        "box3";
+    }
+    .box1{
+        grid-area: box1;
+        width: auto;
+    }
+    .box2{
+        grid-area: box2;
+        width: auto;
+    }
+    .box3{
+        grid-area: box3;
+        width: auto;
+    }
+    .box4{
+        grid-area: box4;
+        width: auto;
+    }
+    .box5{
+        grid-area: box5;
+        width: auto;
+    }
+}
