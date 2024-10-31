@@ -81,7 +81,6 @@ main{
     grid-area: box5;
     background-color: var(--White);
     border-radius: 0.7rem;
-    width: 11rem;
 }
 .box5{
     opacity: 70%;
